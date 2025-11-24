@@ -2,14 +2,14 @@
 
 import pandas as pd
 import numpy as np
-import lightgbm as lgb
+from xgboost import XGBClassifier
 import joblib
 import os
 from datetime import datetime
 
-model_path = r"lgbm_water_model.pkl"
-scaler_path = r"lgbm_colorimetry_scaler.pkl"
-feature_names_path = r"lgbm_feature_names.pkl"
+model_path = r"xgbb_water_model.pkl"
+scaler_path = r"xgb_colorimetry_scaler.pkl"
+feature_names_path = r"xgb_feature_names.pkl"
 cluster_map_path = r"cluster_names/cluster_to_class_name.pkl"
 
 def load_artifacts():
@@ -33,7 +33,6 @@ def predict_from_values(values_dict):
 
 
 def save_result_to_csv(user_inputs, predicted_class_name, csv_path="predictions_log.csv"):
-
 
     # Combine input features and prediction into one dictionary
     row = dict(user_inputs)
