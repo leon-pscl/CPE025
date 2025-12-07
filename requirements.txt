@@ -1,0 +1,20 @@
+# This file contains all required packages for the project to run
+streamlit>=1.28.0  # Modern web framework for building data applications
+streamlit-autorefresh
+pandas      # Data manipulation and analysis library
+numpy>=1.24.0      # Numerical computing and array operations
+plotly     # Interactive plotting library for charts and graphs
+python-dateutil>=2.8.2  # Extended date/time utilities (used by pandas)
+joblib
+
+scipy        # Scientific computing and advanced statistics
+scikit-learn  # Machine learning algorithms
+matplotlib   # Static, animated, and interactive visualizations
+seaborn
+radon
+
+#models
+catboost
+xgboost
+lightgbm
+
