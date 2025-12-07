@@ -19,8 +19,6 @@ if uploaded_file is not None:
         st.metric("Rows", df.shape[0])
     with col2:
         st.metric("Columns", df.shape[1])
-    with col3:
-        st.metric("Memory", f"{df.memory_usage(deep=True).sum() / 1024:.2f} KB")
     
     # Display data
     st.subheader("Data Preview")
